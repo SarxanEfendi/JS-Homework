@@ -10,21 +10,40 @@ function countTwo (arr ,resArr) {
     }
     return resArr;
 }
-console.log(countTwo(arr,resArr));
+
+// array find
+function findElement (array, element){
+    for (var i = 0; i < arr.length; i++) {
+        if(array[i]===element){
+            return element;
+        }
+    }
+}
+
+function findElementResult(result){
+    if(result === undefined){
+        return "bele element yoxdur"
+    }
+    else{
+        return result;
+    }
+}
+
+console.log(findElementResult(findElement(arr,5))); 
 
 // calculator
 
-function calculator(firstElement,seccontElement,sign){
-    if(sign === '+'){
+function calculator(firstElement,seccontElement,operator){
+    if(operator === '+'){
         return firstElement+seccontElement;
     }
-    else if (sign === '-'){
+    else if (operator === '-'){
         return firstElement-seccontElement;
     }
-    else if(sign === '*'){
+    else if(operator === '*'){
         return firstElement*seccontElement;
     }
-    else if (sign === '/'){
+    else if (operator === '/'){
         return firstElement/seccontElement;
     }
     else{
